@@ -1,6 +1,6 @@
 //open new tab with URL: http://www.google.com
 // see https://developer.chrome.com/extensions/tabs#method-create for more details
-var googleUrl = "www.google.com";
+var googleUrl = "https://www.google.com";
 chrome.tabs.create({"url": googleUrl});  
 
 //open new tab and run some scripts
