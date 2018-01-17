@@ -6,8 +6,8 @@ chrome.tabs.create({"url": googleUrl});
 //open new tab and run some scripts
 console.log("running script after document is ready!");
 var script = `
-  alert("I am going to search something!");
   document.getElementById("lst-ib").value = "tianxiaohui.com";
+  alert("I am going to search something!");
   document.querySelector("input[name='btnK'][type='submit']").click();
   `;
  
