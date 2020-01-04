@@ -3,10 +3,10 @@
 var googleUrl = "https://www.google.com";
 chrome.tabs.create({"url": googleUrl});  
 
-//open new tab and run some scripts
+//open new tab and run some scripts on that page
 console.log("running script after document is ready!");
 var script = `
-  document.getElementById("lst-ib").value = "tianxiaohui.com";
+  document.querySelector("input[name='q']").value = "tianxiaohui.com";
   document.querySelector("input[name='btnK'][type='submit']").click();
   `;
  
